@@ -1,3 +1,4 @@
+# Create Bastion EC2 Instance in Public Subnet
 resource "aws_instance" "bastion_instance" {
 
   ami           = var.ami_id

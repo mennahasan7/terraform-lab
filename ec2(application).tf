@@ -1,3 +1,4 @@
+# Create Application EC2 Instance in Private Subnet
 resource "aws_instance" "application_instance" {
 
   ami           = var.ami_id

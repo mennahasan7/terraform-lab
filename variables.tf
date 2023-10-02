@@ -1,30 +1,36 @@
-variable "cidr" {
+variable "vpc_cidr" {
+  description = "CIDR block for the VPC"
   type = string
-  description = "this is cidr block for vpc"
 }
 
 variable "ami_id" {
+  description = "AMI ID for instances"
   type = string
 }
 
 variable "instance_type" {
+  description = "instance type for instances"
   type = string
 }
 
-variable "sub_pub" {
+variable "sub_public" {
+  description = "CIDR blocks for the public subnets"
   type = list(any)
 }
 
-variable "azs" {
+variable "availability_zones" {
+  description = "Availability zones for subnets"
   type = list(any)
 }
 
-variable "sub_priv" {
+variable "sub_private" {
+  description = "CIDR blocks for the private subnets"
   type = list(any)
 }
 
 
 variable "region" {
+  description = "The AWS region"
   type = string
 }
 

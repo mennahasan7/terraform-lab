@@ -1,3 +1,4 @@
+# Create Public Subnets
 resource "aws_subnet" "public_subnet" {
   count                   = 2
   vpc_id                  = aws_vpc.main.id
@@ -10,7 +11,7 @@ resource "aws_subnet" "public_subnet" {
   }
 }
 
-
+# Create Private Subnets
 resource "aws_subnet" "private_subnet" {
   count             = 2
   vpc_id            = aws_vpc.main.id

@@ -1,7 +1,7 @@
 module "mynetwork"{
     source= "./network"
-    cidr=var.cidr
-    sub_pub=var.sub_pub
-    azs=var.azs
-    sub_priv=var.sub_priv
+    cidr=var.vpc_cidr
+    sub_pub=var.sub_public
+    azs=var.availability_zones
+    sub_priv=var.sub_private
 }

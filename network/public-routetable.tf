@@ -1,3 +1,4 @@
+# Create Public Route Table
 resource "aws_route_table" "public-route-table" {
   vpc_id = aws_vpc.main.id
 
@@ -12,6 +13,7 @@ resource "aws_route_table" "public-route-table" {
 
 }
 
+# Associate Public Subnets with Public Route Table
 resource "aws_route_table_association" "routeToSubnet-pubconnection" {
   count          = 2
   subnet_id      = aws_subnet.public_subnet[count.index].id

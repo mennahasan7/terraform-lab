@@ -1,3 +1,4 @@
+# Create NAT Gateway to attach to private route table
 resource "aws_nat_gateway" "nat_gw" {
   allocation_id = aws_eip.my_eip.id
   subnet_id     = aws_subnet.public_subnet[0].id

@@ -1,3 +1,4 @@
+# Create Security Group for SSH from 0.0.0.0/0 to use with public instance
 resource "aws_security_group" "sg1" {
   vpc_id      = module.mynetwork.vpc_id
 
