@@ -20,6 +20,6 @@ resource "aws_lambda_function" "lambda_function" {
   runtime          = "python3.8"
   handler          = "lambda.lambda_handler"
   filename         = "lambda_function.zip"
-  source_code_hash = filebase64sha256("lambda_function.zip") #data.archive_file.lambda-code.output_base64sha256
+  source_code_hash = filebase64sha256("lambda_function.zip") 
 }
 
