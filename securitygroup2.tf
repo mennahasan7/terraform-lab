@@ -1,6 +1,6 @@
 # Create Security Group for SSH and Port 3000 from VPC CIDR to use with private instance
 resource "aws_security_group" "sg2" {
-  vpc_id      = module.mynetwork.vpc_id
+  vpc_id = module.mynetwork.vpc_id
 
   ingress {
     from_port   = 22

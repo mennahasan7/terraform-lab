@@ -6,3 +6,4 @@ sub_public         = ["172.0.1.0/24", "172.0.2.0/24"]
 sub_private        = ["172.0.3.0/24", "172.0.4.0/24"]
 region             = "eu-central-1"
 availability_zones = ["eu-central-1a", "eu-central-1b"]
+lambda_role_name   = "lambda_role_prod"

@@ -1,9 +1,6 @@
 # python code for lambda function
 import boto3  # library for aws services
 
-# from_email = "mennahasan137@gmail.com"
-# client = boto3.client('ses')
-
 
 def lambda_handler(event, context):
     from_email = "mennahasan137@gmail.com"
@@ -40,7 +37,7 @@ def lambda_handler(event, context):
             "ToAddresses": ["mennahasan137@gmail.com"],
         },
         Message=email_message,
-        Source=from_email
+        Source=from_email,
     )
 
     # print the response
